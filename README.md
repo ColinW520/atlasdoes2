@@ -1,2 +1,3 @@
-# atlasdoes2
-A rewrite of a simple web development management application.
+=======
+# Atlas Does 2
+A simple application for managing my web development business.

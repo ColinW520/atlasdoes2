@@ -1,0 +1,28 @@
+# Ignore bundler config.
+/.bundle
+
+# Ignore all logfiles and tempfiles.
+/log/*.log
+/tmp
+
+# Ignore other unneeded files.
+dump.rdb
+database.yml
+doc/
+*.swp
+*~
+.project
+.DS_Store
+.idea
+.secret
+.rspec
+.powrc
+.powenv
+public/
+vendor/bundle
+# Ignore application configuration
+/config/application.yml
+/config/secrets.yml
+
+# Let heroku compile this
+public/assets/**

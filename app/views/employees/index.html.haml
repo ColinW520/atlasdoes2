@@ -1,0 +1,14 @@
+- unless @xhr
+  - provide(:title, 'Employees')
+  .row
+    .col-sm-9
+      %h2
+        %i.fa.fa-institution
+        Employees
+        = link_to new_employee_path(organization_id: params[:organization_id]), remote: true, class: 'btn btn-sm btn-success' do
+          %i.fa.fa-plus
+  %br
+.row
+  .col-sm-12
+    = smart_listing_render :employees
+= render "employees/dialog"

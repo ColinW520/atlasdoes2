@@ -1,0 +1,4 @@
+- if current_user.setup?
+  %h1 Yay, you can see charts and lists now.
+- else
+  = render 'dashboard/setup_instructions'

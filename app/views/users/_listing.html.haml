@@ -1,0 +1,19 @@
+- unless smart_listing.empty?
+  .table-responsive
+    %table.table.table-hover
+      %thead.thead-inverse
+        %th
+        %th= smart_listing.sortable "First", :first_name
+        %th= smart_listing.sortable "Last", :last_name
+        %th= smart_listing.sortable "Email", :email
+        %th= smart_listing.sortable "Created", :created_at
+        %th
+      %tbody#users
+        - smart_listing.collection.each do |user|
+          = render user
+  = smart_listing.paginate
+  .text-info
+    = smart_listing.pagination_per_page_links
+- else
+  .alert.alert-danger
+    %p No Users!

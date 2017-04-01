@@ -1,3 +1,22 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#summary, #portfolio, #contact, #about {
+  min-height: 100vh;
+}
+
+#summary, #about {
+  margin-top: 10vh;
+}
+
+#contact {
+  max-width: 95%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+
+.card-image img {
+  width: 100%;
+}

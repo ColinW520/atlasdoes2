@@ -1,13 +1,289 @@
-%br
-%br
-.row
-  .col-sm-12
-    .jumbotron
+%section#summary
+  .section-content
+    .container
+      %br
+      %br
       .row
-        .col-sm-12
+        .col-xs-12.col-centered
+          %h1.section-title.text-huge.text-center Business Dashboard Solutions
+      %br
+      %br
+      %br
+        .col-xs-12.col-sm-12.col-md-6.col-centered
           .text-center
-            %h1.display-1 Atlas Does. Redux
+            %h4 AtlasDoes builds <em>responsive</em> business applications using modern open-source web development techniques. Our goal is to give you the tool you need to run your business effectively.
             %br
-            %p.lead Test Commit
+            = link_to '#portfoliolink' do
+              %i.fa.fa-long-arrow-down.fa-3x.text-success
+%div#portfoliolink
+%br
+%br
+%section#portfolio
+  .section-content
+    .container
+      .row
+        .col-xs-12.col-sm-12.col-centered
+          %h2.section-title.text-center.upcase Portfolio
+      .row
+        .col-xs-12.col-sm-6.col-md-4
+          .card#givetocure
+            .card-image
+              %a{href: 'http://givetocure.org', target: '_blank'}
+                %img.img-responsive{src: "https://c5.staticflickr.com/8/7574/27876545476_de332a1de7_b.jpg"}
+              %span.card-title Creator
+            .card-content
+              %h4.card-title Give To Cure
+              %p A completely custom crowdfunding platform with an extensive back-end dashboard for program managers.
+            .card-action
+              %span.badge.badge-danger Ruby/Rails
+              %span.badge.badge-primary JQuery
+              %span.badge.badge-success Stripe
+              %span.badge.badge-info Heroku
+              %span.badge.badge-warning SideKiq
+              %span.badge.badge-default
+                %i.fa.fa-instagram
+                Instagram
+        .col-xs-6.col-md-4#aptexx-learn
+          .card
+            .card-image
+              %a{href: 'http://aptexx-learn.herokuapp.com', target: '_blank'}
+                %img.img-responsive{src: "https://c5.staticflickr.com/8/7111/27810350132_40ec1c9341_b.jpg"}
+              %span.card-title Creator
+            .card-content
+              %h4.card-title Aptexx Learn
+              %p A completely custom Learning Management System for Aptexx users. Separates support from product education.
+            .card-action
+              %span.badge.badge-danger Ruby/Rails
+              %span.badge.badge-primary JQuery
+              %span.badge.badge-success ZenDesk
+              %span.badge.badge-info Heroku
+              %span.badge.badge-warning SideKiq
+              %span.badge.badge-default Custom API
+        .col-xs-6.col-md-4#fanmaker
+          .card
+            .card-image
+              %a{href: 'http://fanmaker.com/blog', target: '_blank'}
+                %img.img-responsive{src: "https://c4.staticflickr.com/8/7252/27911651715_ef81147973_b.jpg"}
+              %span.card-title Contributor
+            .card-content
+              %h4.card-title FanMaker
+              %p A powerful, multi-tenant application with iBeacon support powering hundreds of Fan Loyalty programs.
+            .card-action
+              %span.badge.badge-danger Ruby/Rails
+              %span.badge.badge-success ElasticSearch
+              %span.badge.badge-info AWS
+              %span.badge.badge-warning SideKiq
+              %span.badge.badge-default
+                %i.fa.fa-instagram
+                Instagram
+    %br
+    %br
+    %br
+      .row
+        .col-xs-12.col-sm-6.col-md-4#energyx
+          .card
+            .card-image
+              %a{href: 'http://energyxfitness.com', target: '_blank'}
+                %img.img-responsive{src: "https://c7.staticflickr.com/8/7568/27299163534_51436f8466_b.jpg"}
+              %span.card-title Creator
+            .card-content
+              %h4.card-title Energy X Fitness
+              %p An extremely simple, completely custom home page for marketing and promoting Energy X Fitness.
+            .card-action
+              %span.badge.badge-danger Ruby/Rails
+              %span.badge.badge-primary JQuery
+              %span.badge.badge-success Mindbody API
+              %span.badge.badge-info Heroku
+
+        .col-xs-12.col-sm-6.col-md-4#elevate
+          .card
+            .card-image
+              %a{href: 'http://elevateliving.com', target: '_blank'}
+                %img.img-responsive{src: "https://c6.staticflickr.com/8/7217/27834819821_f184a480a7_b.jpg"}
+              %span.card-title Contributor
+            .card-content
+              %h4.card-title Elevate Living
+              %p One of the most content-rich multifamily marketing websites you will ever see, built to scale.
+            .card-action
+              %span.badge.badge-default SEO
+              %span.badge.badge-default Design
+              %span.badge.badge-default Architect
+              %span.badge.badge-default Content Management
+
+
+        .col-xs-12.col-sm-6.col-md-4#wordpress
+          .card
+            .card-image
+              %img.img-responsive{src: 'https://c1.staticflickr.com/5/4099/4919659112_70f8836dfa.jpg'}
+                %span.card-title Creator / Contributor
+            .card-content
+              %h4.card-title Wordress Work
+              %p A small sampling of the wide range of WordPress & SEO work that we've done.
+            .card-action.col-centered
+              %a{href: "http://tidyboats.com", target: "_blank"} Tidy Boats
+              %a{href: "http://atxhifi.com", target: "_blank"} ATX-HiFi
+              %a{href: "http://aptexx.com", target: "_blank"} Aptexx
+              %a{href: "http://clubnauticousa.com", target: "_blank"} Nautico
+%div#teamlink
+%section#about
+  .section-content
+    .container
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %h2.section-title.text-center.upcase About
+          .jumbotron
+            .row
+              .col-md-12
+                %img.img-rounded{src: 'https://c6.staticflickr.com/2/1567/25824290853_0738a5cd65_z.jpg', style: "float:left;width:300px;height:300px; margin-right:20px;"}
+                %p Hi, my name is Colin Hagan. I love building things. Atlas Does is the small business I founded in 2012 to help people build and grow their businesses using modern web development tools. Now, Atlas Does provides a variety of consulting and development services to both big and small businesses across the country. My goal with Atlas Does is simple: make great things with great people. Whats the name all about? The name embodies the guiding principle for how this business interacts with its clients: take it on, get it done, hold it up. Whether you need a green field application built or a microservice on top of a legacy application, I can help.
             %br
-            %a.btn.btn-success.btn-lg{:href => new_user_registration_path} Sign Up
+            .alert.alert-dismissible.alert-danger
+              %button.close{"data-dismiss" => "alert", :type => "button"} &times;
+              %strong Recruiters:
+              Thank you for your interest! At this time, however, I am not seeking new employment opportunities. Let's respect each other's time, sound good?
+%div#expertiselink
+%br
+%br
+%br
+%section#expertise
+  .section-content
+    .container.well
+      .row
+        .col-xs-12
+          %h3 Expertise
+      %b5
+      .row#scale
+        .col-md-3
+          %strong Beginner
+          %i.fa.fa-info-circle{"data-original-title" => "I just started using this technology", "data-placement" => "right", "data-toggle" => "tooltip"}
+        .col-md-3
+          %strong Intermediate
+          %i.fa.fa-info-circle{"data-original-title" => "I've used this a few times", "data-placement" => "right", "data-toggle" => "tooltip"}
+        .col-md-3
+          .text-center
+            %strong Practiced
+            %i.fa.fa-info-circle{"data-original-title" => "I consistently use this technology", "data-placement" => "right", "data-toggle" => "tooltip"}
+        .col-md-3
+          .pull-right
+            %strong Expert
+            %i.fa.fa-info-circle{"data-original-title" => "I consistently use this technology with deep customizations", "data-placement" => "top", "data-toggle" => "tooltip"}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Ruby/Rails - 4 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 95%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p JQuery - 3 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 60%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Responsive HTML/CSS - 6 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 75%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Wordpress - 5 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 75%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p ElasticSearch - 2 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 40%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Sidekiq Background Processing - 3 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 100%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p API Development - 2 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 50%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Instagram API Integration - 2 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 95%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Stripe API Integration - 2 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 65%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Adobe Creative Suite - 3 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 45%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Ruby Scripts - 4 years
+          .progress
+            .progress-bar.bg-success{style: 'width: 85%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p TypeKit
+          .progress
+            .progress-bar.bg-success{style: 'width: 65%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Froala WYSIWYG
+          .progress
+            .progress-bar.bg-success{style: 'width: 65%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Zendesk API
+          .progress
+            .progress-bar.bg-success{style: 'width: 75%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Mailchimp API
+          .progress
+            .progress-bar.bg-success{style: 'width: 85%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Mandrill API
+          .progress
+            .progress-bar.bg-success{style: 'width: 85%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p BaseCRM API
+          .progress
+            .progress-bar.bg-success{style: 'width: 85%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Twitter API
+          .progress
+            .progress-bar.bg-success{style: 'width: 35%'}
+
+
+%div#contactlink
+%br
+%br
+%br
+%br
+%br
+%section#contact
+  .section-content
+    .row
+      .col-xs-12.col-sm-6.col-md-4.col-centered
+        .card
+          .card-content
+            %h2.section-title.text-center.upcase Let's Talk.
+            %p.text-center Every project is unique. We keep it simple, and get the job done.
+            %br
+            = form_tag contact_path, method: 'post' do
+              .form-group
+                %label.control-label{:for => "Name"} Name
+                = text_field_tag 'name', nil, class: 'form-control', placeholder: 'What is your name?'
+              .form-group
+                %label.control-label{:for => "Email"} Email
+                = text_field_tag 'email', nil, class: 'form-control', placeholder: 'What is your email address?'
+              .form-group
+                %label.control-label{:for => "Message"} Message
+                = text_field_tag 'message', nil, class: 'form-control', placeholder: "What do you want to work on?"
+              .text-center
+                = hidden_field_tag 'spam_check', 'spam_check'
+                = submit_tag 'Send', class: 'btn btn-success btn-lg'

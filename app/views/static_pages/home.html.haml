@@ -130,17 +130,25 @@
     .container
       .row
         .col-xs-12.col-sm-12.col-md-12
-          %h2.section-title.text-center.upcase About
+          %h2.section-title.text-center.upcase Team
           .jumbotron
             .row
               .col-md-12
                 %img.img-rounded{src: 'https://c6.staticflickr.com/2/1567/25824290853_0738a5cd65_z.jpg', style: "float:left;width:300px;height:300px; margin-right:20px;"}
-                %p Hi, my name is Colin Hagan. I love building things. Atlas Does is the small business I founded in 2012 to help people build and grow their businesses using modern web development tools. Now, Atlas Does provides a variety of consulting and development services to both big and small businesses across the country. My goal with Atlas Does is simple: make great things with great people. Whats the name all about? The name embodies the guiding principle for how this business interacts with its clients: take it on, get it done, hold it up. Whether you need a green field application built or a microservice on top of a legacy application, I can help.
+                %h4.5 Hi, my name is Colin Hagan. I love building things. Atlas Does is the small business I founded in 2012 to help people build and grow their businesses using modern web development tools. Now, Atlas Does provides a variety of consulting and development services to both big and small businesses across the country. My goal with Atlas Does is simple: make great things with great people. Whats the name all about? The name embodies the guiding principle for how this business interacts with its clients: take it on, get it done, hold it up. Whether you need a green field application built or a microservice on top of a legacy application, I can help.
             %br
             .alert.alert-dismissible.alert-danger
               %button.close{"data-dismiss" => "alert", :type => "button"} &times;
               %strong Recruiters:
               Thank you for your interest! At this time, however, I am not seeking new employment opportunities. Let's respect each other's time, sound good?
+      %br
+        .jumbotron
+          .row
+            .col-md-12
+              %img.image-rounded 
+                = image_tag('ag_photo4.jpg', style: "float:left;width:250px;height:320px; margin-right:20px;")
+              %h4.5 Hey there, I'm Andrew Glover. I love uniting people around a common goal and making things happen. I served on active duty in the U.S. Air Force, and have an extensive background in leadership and program management. I am excited to use my experience to partner with growing businesses in expanding their brand and capabilities. The commitment to a quality customer experience is the reason I chose to work with Atlas Does.
+%br
 %div#expertiselink
 %br
 %br
@@ -257,6 +265,11 @@
           %p Twitter API
           .progress
             .progress-bar.bg-success{style: 'width: 35%'}
+      .row
+        .col-xs-12.col-sm-12.col-md-12
+          %p Program Management
+          .progress
+            .progress-bar.bg-success{style: 'width: 75%'}
 
 
 %div#contactlink

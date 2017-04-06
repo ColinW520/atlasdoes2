@@ -1,1 +1,172 @@
+.header {
+  padding-bottom: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: auto;
+  background-color: #ffffff;
+  z-index: 9999;
 
+  @media (min-width: 768px) {
+    height: 75px;
+  }
+}
+
+.navbar {
+  -webkit-box-shadow: 0 6px 4px -8px #333;
+  -moz-box-shadow: 0 6px 4px -8px #333;
+  box-shadow: 0 6px 4px -8px #333;
+  background-color: #fff;
+  position: relative;
+  min-height: 75px;
+  margin: 0;
+  border: none;
+  border-radius: none;
+}
+
+.navbar-default {
+  background-color: transparent !important;
+  border: none;
+}
+
+.navbar-header {
+  min-height: 75px;
+}
+
+.navbar-brand {
+  float: left;
+  width: 200px;
+  height: inherit;
+  margin: 18px 0 0 !important;
+  padding: 0;
+  font-size: 0 !important;
+
+  a{
+    display: block;
+    line-height: 0px;
+
+    img{
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.navbar-toggle {
+  margin: 19px 0 0 !important;
+  padding: 10px;
+  border: none;
+  line-height: 0;
+
+  &:hover{
+    background-color: rgba(46, 220, 220, 0.5) !important;
+  }
+
+  &:active{
+    background-color: rgba(46, 220, 220, 0.5) !important;
+  }
+
+  &:focus{
+    background-color: rgba(46, 220, 220, 0.5) !important;
+  }
+
+  .icon-bar {
+    color: #ffffff;
+  }
+}
+
+.navbar-collapse {
+  padding: 0 !important;
+  border: none !important;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+.navbar-nav {
+  margin: 0 !important;
+  padding: 0 !important;
+  list-style: none;
+
+  li{
+    text-align: left;
+    border-top: 1px solid #333333;
+
+    a{
+      display: block;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      text-decoration: none;
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: bold;
+      border: 3px solid transparent;
+      color: #353535 !important;
+
+      i{
+        margin-right: 4px;
+      }
+
+      &:hover {
+        color: #DC852E !important;
+      }
+    }
+  }
+  
+  @media (min-width: 768px) {
+    float: right;
+    display: block;
+    margin-top: 13px !important;
+
+    li {
+      float: left;
+      width: auto;
+      margin-right: 2rem;
+      border-top: none;
+      text-align: left;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+.nav-link {
+  font-size: 14px;
+}
+
+.dropdown{
+
+  a{
+    background-color: transparent !important;
+  }
+
+  .caret{
+    margin-top: -4px;
+  }
+}
+
+.dropdown-menu{
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(255, 255, 255, .75);
+
+  li {
+
+    a {
+      color: #353535 !important;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #logo {
+    padding-left: 10px;
+  }
+
+  .navbar-toggle {
+    margin-right: 20px;
+  }
+}

@@ -3,18 +3,18 @@
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     .container-fluid
-      %a.navbar-brand{href: root_path, id: 'logo'} 
-        = image_tag('AD Logo 1.gif')
-      .navbar-collapse.collapse
-        %ul.navbar-nav.navbar-right
-          %li
-            = link_to 'Team', '#team', class: 'nav-link'
-          %li
-            = link_to 'Portfolio', '#portfoliolink', class: 'nav-link'
-          %li
-            = link_to 'Expertise', '#expertiselink', class: 'nav-link'
-          %li
-            = link_to 'Contact', '#contactlink', class: 'nav-link'
+      .navbar-header
+        %a.navbar-brand{href: root_path, id: 'logo'} 
+          = image_tag('AD Logo 1.gif')
+      %ul.nav.navbar-nav.navbar-right
+        %li
+          = link_to 'Team', '#team', class: 'nav-link'
+        %li
+          = link_to 'Portfolio', '#portfoliolink', class: 'nav-link'
+        %li            
+          = link_to 'Expertise', '#expertiselink', class: 'nav-link'
+        %li
+          = link_to 'Contact', '#contactlink', class: 'nav-link'
       #navbarNavDropdown.navbar-collapse.collapse
         %ul.navbar-nav.ml-auto
           - if current_user.present?

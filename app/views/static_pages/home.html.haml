@@ -1,8 +1,6 @@
 %section#summary
   .section-content
     .container
-      %br
-      %br
       .row
         .col-xs-12.col-centered
           %h1.section-title.text-huge.text-center Business Dashboard Solutions
@@ -12,18 +10,27 @@
           .text-center
             %h4 AtlasDoes builds <em>responsive</em> business applications using modern open-source web development techniques. Our goal is to give you the tool you need to run your business effectively.
             %br
+            %br
+            %br
       .row
         .col-xs-12.col-sm-6.col-md-4
           .card#ClientDatabase
-            .card-content 
-              %h4 Client database and login
+            %h3.card-header.card-primary.text-center Client Management
+            .card-block    
+              %h6.card-title Interact with Login Portals
+              %h6.card-title Communicate through emails and texts
         .col-xs-12.col-sm-6.col-md-4
           .card#OnlineInvoice
-            .card-content 
-              %h4 Create invoices and receive payments from your website
+            %h3.card-header.card-success.text-center Easy Payments
+            .card-block
+              %h6.card-title Create professional invoices
+              %h6.card-title Manage secure online payments
         .col-xs-12.col-sm-6.col-md-4
-          .card-content 
-            %h4 Text Messaging, emails, and many additional functions!
+          .card#OnlineInvoice
+            %h3.card-header.card-warning.text-center Business Metrics
+            .card-block
+              %h6.card-title Customized databases
+              %h6.card-title Dashboards to visualize performance
 %br
 %br
 / = link_to '#portfoliolink' do
@@ -128,7 +135,7 @@
           .card
             .card-image
               %img.img-responsive{src: 'https://c1.staticflickr.com/5/4099/4919659112_70f8836dfa.jpg'}
-                %span.card-title Creator / Contributor
+              %h4.card-img-overlay Creator / Contributor
             .card-content
               %h4.card-title Wordress Work
               %p A small sampling of the wide range of WordPress & SEO work that we've done.

@@ -8,13 +8,26 @@
           %h1.section-title.text-huge.text-center Business Dashboard Solutions
       %br
       %br
-      %br
         .col-xs-12.col-sm-12.col-md-6.col-centered
           .text-center
             %h4 AtlasDoes builds <em>responsive</em> business applications using modern open-source web development techniques. Our goal is to give you the tool you need to run your business effectively.
             %br
-            = link_to '#portfoliolink' do
-              %i.fa.fa-long-arrow-down.fa-3x.text-success
+      .row
+        .col-xs-12.col-sm-6.col-md-4
+          .card#ClientDatabase
+            .card-content 
+              %h4 Client database and login
+        .col-xs-12.col-sm-6.col-md-4
+          .card#OnlineInvoice
+            .card-content 
+              %h4 Create invoices and receive payments from your website
+        .col-xs-12.col-sm-6.col-md-4
+          .card-content 
+            %h4 Text Messaging, emails, and many additional functions!
+%br
+%br
+            # = link_to '#portfoliolink' do
+             # %i.fa.fa-long-arrow-down.fa-3x.text-success
 %div#portfoliolink
 %br
 %br
@@ -23,7 +36,7 @@
     .container
       .row
         .col-xs-12.col-sm-12.col-centered
-          %h2.section-title.text-center.upcase Portfolio
+          %h2.section-title.text-center.upcase Check out our Portfolio
       .row
         .col-xs-12.col-sm-6.col-md-4
           .card#givetocure
@@ -43,8 +56,8 @@
               %span.badge.badge-default
                 %i.fa.fa-instagram
                 Instagram
-        .col-xs-6.col-md-4#aptexx-learn
-          .card
+        .col-xs-12.col-sm-6.col-md-4
+          .card#aptexx-learn
             .card-image
               %a{href: 'http://aptexx-learn.herokuapp.com', target: '_blank'}
                 %img.img-responsive{src: "https://c5.staticflickr.com/8/7111/27810350132_40ec1c9341_b.jpg"}
@@ -85,7 +98,7 @@
             .card-image
               %a{href: 'http://energyxfitness.com', target: '_blank'}
                 %img.img-responsive{src: "https://c7.staticflickr.com/8/7568/27299163534_51436f8466_b.jpg"}
-              %span.card-title Creator
+              %span.card-img-overlay Creator
             .card-content
               %h4.card-title Energy X Fitness
               %p An extremely simple, completely custom home page for marketing and promoting Energy X Fitness.
@@ -100,7 +113,7 @@
             .card-image
               %a{href: 'http://elevateliving.com', target: '_blank'}
                 %img.img-responsive{src: "https://c6.staticflickr.com/8/7217/27834819821_f184a480a7_b.jpg"}
-              %span.card-title Contributor
+              %span.card-img-overlay Contributor
             .card-content
               %h4.card-title Elevate Living
               %p One of the most content-rich multifamily marketing websites you will ever see, built to scale.
@@ -282,7 +295,7 @@
   .section-content
     .row
       .col-xs-12.col-sm-6.col-md-4.col-centered
-        .card
+        .card.card-outline-secondary.mb-3.text-center
           .card-content
             %h2.section-title.text-center.upcase Let's Talk.
             %p.text-center Every project is unique. We keep it simple, and get the job done.

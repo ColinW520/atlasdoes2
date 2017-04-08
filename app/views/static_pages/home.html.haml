@@ -303,8 +303,8 @@
 %section#contact
   .section-content
     .row
-      .col-xs-12.col-sm-6.col-md-4.col-centered
-        .card
+      .col-sm-12.col-md-6.col-lg-5.col-centered
+        .card.card-outline-inverse.mt-4
           .card-content
             %h1.section-title.text-center.upcase Let's Talk.
             %br
@@ -323,3 +323,4 @@
               .text-center
                 = hidden_field_tag 'spam_check', 'spam_check'
                 = submit_tag 'Send', class: 'btn btn-success btn-lg'
+              %br

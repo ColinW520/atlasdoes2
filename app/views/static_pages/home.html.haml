@@ -1,3 +1,5 @@
+%br
+%br
 %section#summary
   .section-content
     .container
@@ -302,20 +304,21 @@
   .section-content
     .row
       .col-xs-12.col-sm-6.col-md-4.col-centered
-        .card.card-outline-secondary.mb-3.text-center
+        .card
           .card-content
-            %h2.section-title.text-center.upcase Let's Talk.
+            %h1.section-title.text-center.upcase Let's Talk.
+            %br
             %p.text-center Every project is unique. We keep it simple, and get the job done.
             %br
-            = form_tag contact_path, method: 'post' do
+            %form
               .form-group
-                %label.control-label{:for => "Name"} Name
+                %label.h4{:for => "Name"} Name
                 = text_field_tag 'name', nil, class: 'form-control', placeholder: 'What is your name?'
               .form-group
-                %label.control-label{:for => "Email"} Email
-                = text_field_tag 'email', nil, class: 'form-control', placeholder: 'What is your email address?'
+                %label.h4{:for => "email"} Email
+                %input#email.form-control{:placeholder => "What is your email?", :type => "email"}
               .form-group
-                %label.control-label{:for => "Message"} Message
+                %label.h4{:for => "Message"} Message
                 = text_field_tag 'message', nil, class: 'form-control', placeholder: "What do you want to work on?"
               .text-center
                 = hidden_field_tag 'spam_check', 'spam_check'

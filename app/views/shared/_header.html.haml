@@ -15,18 +15,19 @@
         = link_to 'Expertise', '#expertiselink', class: 'nav-link'
       %li.nav-item.h4
         = link_to 'Contact', '#contactlink', class: 'nav-link'
+        
       %ul.navbar-nav.ml-auto
         - if current_user.present?
-          %li.nav-item.h4
+          %li.nav-item.h5
             %a.nav-link{href: dashboard_path}
               %i.fa.fa-dashboard
                 Dashboard
-            %li.nav-item.h4  
+            %li.nav-item.h5  
               %a.nav-link{href: destroy_user_session_path, method: :delete}
                 %i.fa.fa-sign-out
                 Sign Out
         - else
-          %li.nav-item.h4
+          %li.nav-item.h5
             %a.nav-link{href: new_user_session_path}
               %i.fa.fa-sign-in
               Sign In

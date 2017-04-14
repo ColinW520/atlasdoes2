@@ -316,9 +316,9 @@
             %br
             %p.h7.text-center Every project is unique. We keep it simple, and get the job done.
             %br
-            %form
+            = form_tag contact_path, method: 'post' do
               .form-group
-                %label.h4{:for => "Name"} Name
+                %label.control-label{:for => "Name"} Name
                 = text_field_tag 'name', nil, class: 'form-control', placeholder: 'What is your name?'
               .form-group
                 %label.h4{:for => "email"} Email

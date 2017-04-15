@@ -22,7 +22,7 @@ public/
 vendor/bundle
 # Ignore application configuration
 /config/application.yml
-/config/secrets.yml
+# /config/secrets.yml
 
 # Let heroku compile this
 public/assets/**

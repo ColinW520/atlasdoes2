@@ -1,11 +1,21 @@
 %header.header
-  %nav.navbar.navbar-toggleable-md.navbar-inverse.bg-primary
+  %nav.navbar.fixed-top.navbar-toggleable-md.navbar-light.bg-inverse
     %button.navbar-toggler.navbar-toggler-right{"aria-controls" => "navbarNavDropdown", "aria-expanded" => "false", "aria-label" => "Toggle navigation", "data-target" => "#navbarNavDropdown", "data-toggle" => "collapse", :type => "button"}
       %span.navbar-toggler-icon
     .container
-      %a.navbar-brand{href: "#"} atlasdoes2
+      %a.navbar-brand
+        %a{href: root_path, id: 'logo', style: 'text-decoration: none;'} 
+          = image_tag('AD Logo 1.gif', id: 'main_logo_image' )
       #navbarNavDropdown.navbar-collapse.collapse
         %ul.navbar-nav.ml-auto
+          %li.nav-item
+            = link_to 'Team', '#team', class: 'nav-link'
+          %li.nav-item
+            = link_to 'Portfolio', '#portfoliolink', class: 'nav-link'
+          %li.nav-item           
+            = link_to 'Expertise', '#expertiselink', class: 'nav-link'
+          %li.nav-item
+            = link_to 'Contact', '#contactlink', class: 'nav-link'
           - if current_user.present?
             %li.nav-item
               %a.nav-link{href: dashboard_path}
@@ -19,4 +29,4 @@
             %li.nav-item
               %a.nav-link{href: new_user_session_path}
                 %i.fa.fa-sign-in
-                Sign In
+                Clients

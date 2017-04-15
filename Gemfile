@@ -11,7 +11,7 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-# Font End Stuff
+# Front End Stuff
 gem 'bootstrap', '~> 4.0.0.alpha6'
 gem 'tether-rails'
 gem 'font-awesome-rails', github: 'bokmann/font-awesome-rails'
@@ -33,6 +33,7 @@ gem 'local_time'
 gem 'remotipart', '~> 1.2'
 gem 'wysiwyg-rails'
 gem 'unobtrusive_flash', '>=3'
+gem 'bootstrap-sass'
 
 
 # Database Stuff

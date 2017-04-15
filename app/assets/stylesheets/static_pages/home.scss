@@ -1,3 +1,33 @@
 // Place all the styles related to the static_pages controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+#static_pages_home {
+  #summary, #portfolio, #contact, #about {
+    min-height: 100vh;
+  }
+
+  #summary, #about {
+    margin-top: 10vh;
+  }
+  
+  #contact {
+    max-width: 95%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  
+  
+  .card-image img {
+    width: 100%;
+  }
+
+  .card-img-overlay {
+    max-height: 10px;
+    // background-color: $gray-light;
+    color: $white;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+
+}
+

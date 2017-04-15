@@ -200,24 +200,34 @@
 %section#contact
   .section-content
     .row
-      .col-sm-12.col-md-6.col-lg-5.col-centered
-        .card.card-outline-inverse.mt-4
-          .card-content
-            %h1.text-center.upcase Let's Talk.
-            %br
-            %p.h7.text-center Every project is unique. We keep it simple, and get the job done.
-            %br
-            = form_tag contact_path, method: 'post' do
-              .form-group
-                %label.control-label{:for => "Name"} Name
-                = text_field_tag 'name', nil, class: 'form-control', placeholder: 'What is your name?'
-              .form-group
-                %label.h4{:for => "email"} Email
-                %input#email.form-control{:placeholder => "What is your email?", :type => "email"}
-              .form-group
-                %label.h4{:for => "Message"} Message
-                = text_field_tag 'message', nil, class: 'form-control', placeholder: "What do you want to work on?"
-              .text-center
-                = hidden_field_tag 'spam_check', 'spam_check'
-                = submit_tag 'Send', class: 'btn btn-success btn-lg'
-              %br
+      .col-sm-12.col-md-6.col-lg-5.col-centered.jumbotron
+        %h1.text-center.upcase Let's Talk.
+        %p.lead.text-center Every project is unique. We keep it simple, and get the job done.
+        %br
+        = form_for contact_path, method: 'post' do |f|
+          .form-group
+            %label.control-label{:for => "Name"} Name
+            = f.text_field :name, class: 'form-control'
+          .form-group
+            %label{:for => "email"} Email
+            = f.email_field :email, class: 'form-control'
+          .form-group
+            %label{:for => "Message"} Message
+            = f.text_area :message, class: 'form-control'
+          .text-center
+            = f.hidden_field :spam_check, value: 'spam_check'
+            = f.submit 'Send', class: 'btn btn-success btn-lg'
+
+
+
+
+
+
+
+
+
+
+
+
+
+

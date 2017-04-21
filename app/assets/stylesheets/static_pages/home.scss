@@ -5,8 +5,18 @@
 #static_pages_home {
   #summary, #portfolio, #contact, #about {
     min-height: 100vh;
+    
   }
-
+  
+  #summary {
+    .card-title {
+      font-size: 20px;
+    span {
+      font-size: 20px;
+    }
+  }
+  }
+  
   #summary, #about {
     margin-top: 10vh;
   }
@@ -28,6 +38,5 @@
     color: $white;
     background-color: rgba(0, 0, 0, 0.5);
   }
-
 }
 

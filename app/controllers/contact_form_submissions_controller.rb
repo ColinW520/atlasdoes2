@@ -1,29 +1,29 @@
-class ContactFormSubmission < ApplicationController
-   def create
-    @contact_form_submission = ContactFormSubmission.create(contact_form_submission_params.except(:secret_thing))
-    unless params {:secret_thing == 'spam_check'
-      flash[:alert] = 'We think this might be spam... Call us if you disagree!'
-      redirect_to root_path and return
-    end
+class ContactFormSubmissionsController < ApplicationController
+  skip_before_action :authenticate_user!
 
-    respond_to do |format|
-      if @organization.save
-        format.json { head :no_content }
-        format.js { flash[:success] = 'Organization has been created.' }
+   def create
+     unless params['spam_check'] == 'opie'
+       redirect_to root_path, notice: 'This looks like spam...call us if you disagree' and return
+     end
+
+     submission = ContactFormSubmission.create(contact_form_submission_params)
+
+     respond_to do |format|
+      if submission.save
         format.html {
-          flash[:success] = 'Your organization has been created! Now you can set your billing preferences.'
-          render :show
+          redirect_to root_path, notice: 'Thank you for your submission! We will get back to you asap.'
         }
       else
-        format.json { render json: @solution.errors.full_messages, status: :unprocessable_entity }
+        format.html {
+          redirect_to root_path, notice: 'There was a problem with your submission. Please try again.'
+        }
       end
-
     end
   end
-  
-    private
+
+private
 
   def contact_form_submission_params
-    params.require(:contact_form_submission).permit(:name, :email, :message, :secret_thing)
+    params.require(:contact_form_submission).permit(:name, :email, :message)
   end
-end    
+end

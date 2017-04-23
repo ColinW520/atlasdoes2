@@ -21,7 +21,7 @@
         .col-xs-12.col-sm-6.col-md-4
           .card#ClientDatabase
             %h4.card-header.card-primary.text-center Interact with your clients
-            .card-block    
+            .card-block
               %span.fa-stack.fa-lg
                 %i.fa.fa-file-image-o.fa-stack-3x
               Display your products
@@ -46,7 +46,7 @@
               Secure online payments
               %br/
               %span.fa-stack.fa-lg
-                %i.fa.fa-list-alt.fa-stack-3x  
+                %i.fa.fa-list-alt.fa-stack-3x
               Track payment history
         .col-xs-12.col-sm-6.col-md-4
           .card#OnlineInvoice
@@ -239,19 +239,5 @@
             %label{:for => "Message"} Message
             = f.text_area :message, class: 'form-control'
           .text-center
-            = f.hidden_field :spam_check, value: 'spam_check'
+            = hidden_field_tag :spam_check, 'opie'
             = f.submit 'Send', class: 'btn btn-success btn-lg'
-
-
-
-
-
-
-
-
-
-
-
-
-
-

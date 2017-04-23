@@ -1,0 +1,6 @@
+%p
+  New message received at AtlasDoes.com:
+%p --------------
+%p= "From: #{@name} - #{@email}"
+%p Message --------------
+= sanitize(ApplicationHelper.line_break(@message), tags: %w(br))

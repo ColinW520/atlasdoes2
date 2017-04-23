@@ -27,7 +27,7 @@
               Display your products
               %br/
               %span.fa-stack.fa-lg
-                %i.fa.fa-users.fa-stack-1x
+                %i.fa.fa-users.fa-stack-3x
               Create customer profiles
               %br/
               %span.fa-stack.fa-lg
@@ -52,12 +52,15 @@
           .card#OnlineInvoice
             %h4.card-header.card-warning.text-center Monitor your performance
             .card-block
-              %i.fa.fa-line-chart.fa-3x
-                %span.card-title Track relevant metrics
-              %i.fa.fa-tasks.fa-3x
-                %span.card-title Visualize performance
-              %i.fa.fa-exchange.fa-3x
-                %span.card-title Input data
+              %span.fa-stack.fa-lg
+                %i.fa.fa-line-chart.fa-stack-3x
+              Track relevant metrics
+              %span.fa-stack.fa-lg
+                %i.fa.fa-tasks.fa-stack-3x
+              Visualize performance
+              %span.fa-stack.fa-lg
+                %i.fa.fa-exchange.fa-stack-3x
+              Input data
 %br
 %br
 / = link_to '#portfoliolink' do
@@ -193,7 +196,7 @@
             .card-action
               %span.badge.badge-danger CEO
               %span.badge.badge-primary Project Manager
-              %span.badge.badge-success Story Writer
+              %span.badge.badge-success Contracts
               %span.badge.badge-info Timeline Manager
               %span.badge.badge-warning Requirements
         .col-sm-12.col-md-4
@@ -225,7 +228,7 @@
         %h1.text-center.upcase Let's Talk.
         %p.lead.text-center Every project is unique. We keep it simple, and get the job done.
         %br
-        = form_for contact_path, method: 'post' do |f|
+        = form_for ContactFormSubmission.new, method: 'post' do |f|
           .form-group
             %label.control-label{:for => "Name"} Name
             = f.text_field :name, class: 'form-control'

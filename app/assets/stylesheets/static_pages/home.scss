@@ -3,21 +3,17 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 #static_pages_home {
-  #summary, #portfolio, #contact, #about {
-    min-height: 100vh;
+  #summary, #contact {
+    margin: 10vh;
   }
 
-  #summary, #about {
-    margin-top: 10vh;
-  }
-  
   #contact {
     max-width: 95%;
     margin-right: auto;
     margin-left: auto;
   }
-  
-  
+
+
   .card-image img {
     width: 100%;
   }
@@ -30,4 +26,3 @@
   }
 
 }
-

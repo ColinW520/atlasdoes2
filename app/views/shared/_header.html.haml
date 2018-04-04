@@ -4,16 +4,16 @@
       %span.navbar-toggler-icon
     .container
       %a.navbar-brand
-        %a{href: root_path, id: 'logo', style: 'text-decoration: none;'} 
+        %a{href: root_path, id: 'logo', style: 'text-decoration: none;'}
           = image_tag('AD Logo 1.gif', id: 'main_logo_image' )
       #navbarNavDropdown.navbar-collapse.collapse
         %ul.navbar-nav.ml-auto
-          %li.nav-item
-            = link_to 'Team', '#team', class: 'nav-link'
-          %li.nav-item
-            = link_to 'Portfolio', '#portfoliolink', class: 'nav-link'
-          %li.nav-item           
-            = link_to 'Expertise', '#expertiselink', class: 'nav-link'
+          -# %li.nav-item
+          -#   = link_to 'Team', '#team', class: 'nav-link'
+          -# %li.nav-item
+          -#   = link_to 'Portfolio', '#portfoliolink', class: 'nav-link'
+          -# %li.nav-item
+          -#   = link_to 'Expertise', '#expertiselink', class: 'nav-link'
           %li.nav-item
             = link_to 'Contact', '#contactlink', class: 'nav-link'
           - if current_user.present?

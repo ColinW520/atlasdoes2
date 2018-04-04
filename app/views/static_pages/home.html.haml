@@ -1,202 +1,22 @@
-%br
-%br
-%br
-%section#summary
+%section#summary{style: "margin-top: 15vh;"}
   .section-content
     .container
       .row
+        .col-sm-12
+          .text-center
+            = image_tag('AD Logo 1.gif', id: 'main_logo_image', style: 'margin-left: auto; margin-right: auto;' )
+      %br
+      .row
         .col-xs-12.col-centered
-          %h1.text-center.display-1 Business Dashboard Solutions
+          %hr
+          %h1.text-center SOFTWARE SOLUTIONS
       %br
       %br
       %br
         .col-xs-12.col-sm-12.col-md-8.col-centered
           .text-center
-            %h4 AtlasDoes builds <em>responsive</em> business applications using modern open-source web development techniques. Our goal is to give you the tools you need to run your business effectively.
-            %br
-            %br
-            %br
-            %br
-      .row
-        .col-xs-12.col-sm-6.col-md-4
-          .card#ClientDatabase
-            %h4.card-header.card-primary.text-center Interact with your clients
-            .card-block    
-              %h6.card-title Display products and services
-              %h6.card-title Create customer profiles
-              %h6.card-title Communicate through any social method
-        .col-xs-12.col-sm-6.col-md-4
-          .card#OnlineInvoice
-            %h4.card-header.card-success.text-center Make transactions easy
-            .card-block
-              %h6.card-title Develop professional invoices
-              %h6.card-title Facilitate secure online payments
-              %h6.card-title Track payment history
-        .col-xs-12.col-sm-6.col-md-4
-          .card#OnlineInvoice
-            %h4.card-header.card-warning.text-center Monitor your performance
-            .card-block
-              %h6.card-title Track relevant metrics with databases
-              %h6.card-title Visualize performance with dashboards
-              %h6.card-title Input data from multiple sources
-%br
-%br
-/ = link_to '#portfoliolink' do
-/ %i.fa.fa-long-arrow-down.fa-3x.text-success
-%div#portfoliolink
-%br
-%br
-%section#portfolio
-  .section-content
-    .container
-      .row
-        .col-xs-12.col-sm-12.col-centered
-          %h2.text-center.upcase Check out our Portfolio
-      .row
-        .col-xs-12.col-sm-6.col-md-4
-          .card#givetocure
-            .card-image
-              %a{href: 'http://givetocure.org', target: '_blank'}
-                %img.img-responsive{src: "https://c5.staticflickr.com/8/7574/27876545476_de332a1de7_b.jpg"}
-              %span.card-img-overlay Creator
-            .card-content
-              %h4.card-title Give To Cure
-              %p A completely custom crowdfunding platform with an extensive back-end dashboard for program managers.
-            .card-action
-              %span.badge.badge-danger Ruby/Rails
-              %span.badge.badge-primary JQuery
-              %span.badge.badge-success Stripe
-              %span.badge.badge-info Heroku
-              %span.badge.badge-warning SideKiq
-              %span.badge.badge-default
-                %i.fa.fa-instagram
-                Instagram
-        .col-xs-12.col-sm-6.col-md-4
-          .card#aptexx-learn
-            .card-image
-              %a{href: 'http://aptexx-learn.herokuapp.com', target: '_blank'}
-                %img.img-responsive{src: "https://c5.staticflickr.com/8/7111/27810350132_40ec1c9341_b.jpg"}
-              %span.card-img-overlay Creator
-            .card-content
-              %h4.card-title Aptexx Learn
-              %p A completely custom Learning Management System for Aptexx users. Separates support from product education.
-            .card-action
-              %span.badge.badge-danger Ruby/Rails
-              %span.badge.badge-primary JQuery
-              %span.badge.badge-success ZenDesk
-              %span.badge.badge-info Heroku
-              %span.badge.badge-warning SideKiq
-              %span.badge.badge-default Custom API
-        .col-xs-6.col-md-4#fanmaker
-          .card
-            .card-image
-              %a{href: 'http://fanmaker.com/blog', target: '_blank'}
-                %img.img-responsive{src: "https://c4.staticflickr.com/8/7252/27911651715_ef81147973_b.jpg"}
-              %span.card-img-overlay Contributor
-            .card-content
-              %h4.card-title FanMaker
-              %p A powerful, multi-tenant application with iBeacon support powering hundreds of Fan Loyalty programs.
-            .card-action
-              %span.badge.badge-danger Ruby/Rails
-              %span.badge.badge-success ElasticSearch
-              %span.badge.badge-info AWS
-              %span.badge.badge-warning SideKiq
-              %span.badge.badge-default
-                %i.fa.fa-instagram
-                Instagram
-    %br
-    %br
-    %br
-      .row
-        .col-xs-12.col-sm-6.col-md-4#energyx
-          .card
-            .card-image
-              %a{href: 'http://energyxfitness.com', target: '_blank'}
-                %img.img-responsive{src: "https://c7.staticflickr.com/8/7568/27299163534_51436f8466_b.jpg"}
-              %span.card-img-overlay Creator
-            .card-content
-              %h4.card-title Energy X Fitness
-              %p An extremely simple, completely custom home page for marketing and promoting Energy X Fitness.
-            .card-action
-              %span.badge.badge-danger Ruby/Rails
-              %span.badge.badge-primary JQuery
-              %span.badge.badge-success Mindbody API
-              %span.badge.badge-info Heroku
+            %h4 We build <em>responsive</em> business-centric applications using modern open-source web development techniques.
 
-        .col-xs-12.col-sm-6.col-md-4#elevate
-          .card
-            .card-image
-              %a{href: 'http://elevateliving.com', target: '_blank'}
-                %img.img-responsive{src: "https://c6.staticflickr.com/8/7217/27834819821_f184a480a7_b.jpg"}
-              %span.card-img-overlay Contributor
-            .card-content
-              %h4.card-title Elevate Living
-              %p One of the most content-rich multifamily marketing websites you will ever see, built to scale.
-            .card-action
-              %span.badge.badge-default SEO
-              %span.badge.badge-default Design
-              %span.badge.badge-default Architect
-              %span.badge.badge-default Content Management
-
-
-        .col-xs-12.col-sm-6.col-md-4#wordpress
-          .card
-            .card-image
-              %img.img-responsive{src: 'https://c1.staticflickr.com/5/4099/4919659112_70f8836dfa.jpg'}
-              %span.card-img-overlay Creator / Contributor
-            .card-content
-              %h4.card-title Wordress Work
-              %p A small sampling of the wide range of WordPress & SEO work that we've done.
-            .card-action.col-centered
-              %a{href: "http://tidyboats.com", target: "_blank"} Tidy Boats
-              |
-              %a{href: "http://atxhifi.com", target: "_blank"} ATX-HiFi
-              |
-              %a{href: "http://aptexx.com", target: "_blank"} Aptexx
-              |
-              %a{href: "http://clubnauticousa.com", target: "_blank"} Nautico
-%div#teamlink
-%section#about
-  .section-header
-    %h2.text-center.upcase Team
-  .section-content
-    .container
-      .row
-        .col-sm-12.col-md-4.offset-md-2
-          .card#AndyProfile
-            .card-image
-              %a{href: 'https://www.linkedin.com/in/andrew-glover-535aa5a4/', target: '_blank'}
-                = image_tag('ag_photo6.jpg', class: 'img-responsive')
-            .card-content
-              %h4.card-title Andrew Glover
-              %p Hey there, I'm Andrew Glover. I love uniting people around a common goal and making things happen. I served on active duty in the U.S. Air Force, and have an extensive background in leadership and program management. I am excited to use my experience to partner with growing businesses in expanding their brand and capabilities. The commitment to a quality customer experience is the reason I chose to work with Atlas Does.
-            .card-action
-              %span.badge.badge-danger CEO
-              %span.badge.badge-primary Project Manager
-              %span.badge.badge-success Story Writer
-              %span.badge.badge-info Timeline Manager
-              %span.badge.badge-warning Requirement Definer.
-        .col-sm-12.col-md-4
-          .card#ColinProfile
-            .card-image
-              %a{href: 'https://www.linkedin.com/in/colinhagan/', target: '_blank'}
-                %img.img-responsive{src: "https://c6.staticflickr.com/2/1567/25824290853_0738a5cd65_z.jpg"}
-            .card-content
-              %h4.card-title Colin Hagan
-              %p Hi, my name is Colin Hagan. I love building things. Atlas Does is the small business I founded in 2012 to help people build and grow their businesses using modern web development tools. Now, Atlas Does provides a variety of consulting and development services to both big and small businesses across the country. My goal with Atlas Does is simple: make great things with great people. Whats the name all about? The name embodies the guiding principle for how this business interacts with its clients: take it on, get it done, hold it up. Whether you need a green field application built or a microservice on top of a legacy application, I can help.
-            .card-action
-              %span.badge.badge-danger Developer
-              %span.badge.badge-primary Architect
-              %span.badge.badge-success Integration Expert
-              %span.badge.badge-info Designer
-              %span.badge.badge-warning Databases
-
-%div#contactlink
-%br
-%br
-%br
-%br
-%br
 %section#contact
   .section-content
     .row
@@ -217,17 +37,7 @@
           .text-center
             = f.hidden_field :spam_check, value: 'spam_check'
             = f.submit 'Send', class: 'btn btn-success btn-lg'
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    .text-center
+      %a.nav-link{href: new_user_session_path}
+        %i.fa.fa-sign-in
+        Clients
